@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Quicksand:wght@500&display=swap');
+@font-face {
+    src: url(fonts/Luckybones-Bold.ttf);
+    font-family: Luckybones ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+nav{
+    height: 110px;  /* Cuando hago scrool pasa a medir 60px*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-left: 13%;
+    padding-right: 13%;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    position: relative; 
+    z-index: 1; 
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+a{
+    color: #BE6E39;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAA634;
+    text-shadow: 0.5px 0.5px 0.05em #BE6E39;
+}
+
+div h1, p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 35px;
+    color: #F4EAD1;
+}
+
+div p{
+    font-size: 25px;
+}
+
+.encabezado-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    height: 70%; 
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+div h1,p{
+    position: absolute;
+    left: 50%; 
+    top: 60%; 
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    text-shadow: 0 0 0.05em #F4EAD1;
+}
+
+p{
+    left: 50%; 
+    top: 65%; 
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+#lupa{
+    width: 18px;
+    height: 18px;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    z-index: 0;
+}
+
+

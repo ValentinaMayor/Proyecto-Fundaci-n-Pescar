@@ -1,0 +1,184 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Quicksand:wght@500&display=swap');
+
+@font-face {
+    src: url(fonts/Luckybones-Bold.ttf);
+    font-family: Luckybones;
+}
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    height: 115px !important; /* Altura de la barra de navegación */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.nav-style {
+    padding-top: 10px;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+/* Estilo de la lista de navegación */
+.navbar-nav {
+    text-align: left !important;
+    margin-left: 250px !important;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 35px;
+}
+
+/* Estilo de los enlaces de navegación */
+ul {
+    padding-left: 70px !important;
+    overflow: hidden;
+}
+
+a {
+    color: #BE6E39 !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAA634 !important;
+    text-shadow: 0.5px 0.5px 0.05em #BE6E39 !important;
+}
+
+/* Estilo del contenido principal */
+div h1,
+div p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 35px;
+    color: #F4EAD1;
+}
+
+div p {
+    font-size: 25px;
+}
+
+/* Estilo de la imagen de encabezado */
+.encabezado-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.encabezado-img h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+div h1,
+p {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    text-shadow: 0 0 0.05em #F4EAD1;
+}
+
+p {
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+/* Estilo del botón de navegación */
+.button{
+    border: none;
+    transform: translateX(15%);
+    color: transparent;
+}
+
+.burger-menu{
+    height: 45px;
+    width: 40px;
+}
+
+/* Estilo de imágenes adicionales */
+#lupa {
+    width: 18px;
+    height: 18px;
+}
+
+#logo {
+    width: 150px !important;
+    height: 150px !important;
+    z-index: 0;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+/* Estilos para tablets (768px de ancho o menos) */
+@media (max-width: 768px) {
+    .encabezado-img h1 {
+        font-size: 1.4rem;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .encabezado-img p {
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .button{
+        transform: translateX(80%);
+    }
+
+    #logo {
+        left: 40px;
+    }
+}
+
+/* Estilos para teléfonos (576px de ancho o menos) */
+@media (max-width: 576px) {
+    .encabezado-img h1 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .encabezado-img p {
+        font-size: 0.9rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .encabezado-img {
+        height: auto;
+    }
+
+    .button{
+        transform: translateX(80%);
+    }
+
+    #logo {
+        left: 15px;
+    }
+
+}
